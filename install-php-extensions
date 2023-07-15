@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# This script wraps docker-php-ext-install, properly configuring the system.
+# Let's set a sane environment
+set -o errexit
+set -o nounset
