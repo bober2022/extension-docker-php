@@ -4,3 +4,5 @@
 # Let's set a sane environment
 set -o errexit
 set -o nounset
+if test "${IPE_DEBUG:-}" = "1"; then
+	set -x
