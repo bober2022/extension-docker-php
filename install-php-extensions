@@ -11,3 +11,6 @@ fi
 if ! which docker-php-ext-configure >/dev/null || ! which docker-php-ext-enable >/dev/null || ! which docker-php-ext-install >/dev/null || ! which docker-php-source >/dev/null; then
 	printf 'The script %s is meant to be used with official Docker PHP Images - https://hub.docker.com/_/php\n' "$0" >&2
 	exit 1
+fi
+
+IPE_VERSION=master
