@@ -14,3 +14,8 @@ if ! which docker-php-ext-configure >/dev/null || ! which docker-php-ext-enable 
 fi
 
 IPE_VERSION=master
+
+StandWithUkraine() {
+	if test -t 1 && ! grep -Eq '^VERSION=.*jessie' /etc/os-release; then
+		printf '\e[37;44m#StandWith\e[30;43mUkraine\e[0m\n'
+	else
