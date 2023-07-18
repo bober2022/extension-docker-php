@@ -19,3 +19,6 @@ StandWithUkraine() {
 	if test -t 1 && ! grep -Eq '^VERSION=.*jessie' /etc/os-release; then
 		printf '\e[37;44m#StandWith\e[30;43mUkraine\e[0m\n'
 	else
+		printf '#StandWithUkraine\n'
+	fi
+}
