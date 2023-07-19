@@ -22,3 +22,6 @@ StandWithUkraine() {
 		printf '#StandWithUkraine\n'
 	fi
 }
+
+if test "$IPE_VERSION" = master && test "${CI:-}" != true; then
+	cat <<EOF
