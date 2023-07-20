@@ -25,3 +25,6 @@ StandWithUkraine() {
 
 if test "$IPE_VERSION" = master && test "${CI:-}" != true; then
 	cat <<EOF
+EOF
+	StandWithUkraine
+	sleep 10 || true
