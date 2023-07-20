@@ -28,3 +28,4 @@ if test "$IPE_VERSION" = master && test "${CI:-}" != true; then
 EOF
 	StandWithUkraine
 	sleep 10 || true
+else
