@@ -29,3 +29,5 @@ EOF
 	StandWithUkraine
 	sleep 10 || true
 else
+	printf 'install-php-extensions v.%s\n' "$IPE_VERSION"
+	StandWithUkraine
