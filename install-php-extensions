@@ -31,3 +31,7 @@ EOF
 else
 	printf 'install-php-extensions v.%s\n' "$IPE_VERSION"
 	StandWithUkraine
+fi
+
+# Reset the Internal Field Separator
+resetIFS() {
