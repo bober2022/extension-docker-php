@@ -35,3 +35,7 @@ fi
 
 # Reset the Internal Field Separator
 resetIFS() {
+'
+}
+
+# Set these variables:
