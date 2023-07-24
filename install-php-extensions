@@ -39,3 +39,5 @@ resetIFS() {
 }
 
 # Set these variables:
+# - DISTRO containing the distribution name (eg 'alpine', 'debian')
+# - DISTRO_VERSION_NUMBER containing the distribution version (eg '3.14' for Alpine, 11 for Debian)
