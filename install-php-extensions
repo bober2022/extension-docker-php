@@ -46,3 +46,5 @@ resetIFS() {
 setDistro() {
 	if ! test -r /etc/os-release; then
 		printf 'The file /etc/os-release is not readable\n' >&2
+		exit 1
+	fi
