@@ -51,3 +51,5 @@ setDistro() {
 	DISTRO="$(cat /etc/os-release | grep -E ^ID= | cut -d = -f 2)"
 	DISTRO_VERSION_NUMBER="$(cat /etc/os-release | grep -E ^VERSION_ID= | cut -d = -f 2 | cut -d '"' -f 2 | cut -d . -f 1,2)"
 	DISTRO_VERSION="$(printf '%s@%s' $DISTRO $DISTRO_VERSION_NUMBER)"
+	DISTRO_MAJMIN_VERSION="$(echo "$DISTRO_VERSION_NUMBER" | awk -F. '{print $1*100+$2}')"
+}
