@@ -53,3 +53,6 @@ setDistro() {
 	DISTRO_VERSION="$(printf '%s@%s' $DISTRO $DISTRO_VERSION_NUMBER)"
 	DISTRO_MAJMIN_VERSION="$(echo "$DISTRO_VERSION_NUMBER" | awk -F. '{print $1*100+$2}')"
 }
+
+# Set:
+# - PHP_MAJMIN_VERSION: Major-Minor version, format MMmm (example 800 for PHP 8.0.1)
