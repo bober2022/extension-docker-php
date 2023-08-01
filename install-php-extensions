@@ -56,3 +56,5 @@ setDistro() {
 
 # Set:
 # - PHP_MAJMIN_VERSION: Major-Minor version, format MMmm (example 800 for PHP 8.0.1)
+# - PHP_MAJDOTMIN_VERSION: Major-Minor version, format M.m (example 8.0 for PHP 8.0.1)
+# - PHP_MAJMINPAT_VERSION: Major-Minor-Patch version, format MMmmpp (example 80001 for PHP 8.0.1) variables containing integers values
