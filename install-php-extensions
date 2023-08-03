@@ -60,3 +60,5 @@ setDistro() {
 # - PHP_MAJMINPAT_VERSION: Major-Minor-Patch version, format MMmmpp (example 80001 for PHP 8.0.1) variables containing integers values
 # - PHP_MAJDOTMINDOTPAT_VERSION: Major-Minor-Patch version, format M.m.p (example 8.0.1 for PHP 8.0.1)
 # - PHP_THREADSAFE: 1 if PHP is thread-safe (TS), 0 if not thread-safe (NTS)
+# - PHP_DEBUGBUILD: 1 if PHP is debug build (configured with "--enable-debug"), 0 otherwise
+# - PHP_BITS: 32 if PHP is compiled for 32-bit, 64 if 64-bit
