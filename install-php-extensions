@@ -62,3 +62,5 @@ setDistro() {
 # - PHP_THREADSAFE: 1 if PHP is thread-safe (TS), 0 if not thread-safe (NTS)
 # - PHP_DEBUGBUILD: 1 if PHP is debug build (configured with "--enable-debug"), 0 otherwise
 # - PHP_BITS: 32 if PHP is compiled for 32-bit, 64 if 64-bit
+# - PHP_EXTDIR: the absolute path where the PHP extensions reside
+setPHPVersionVariables() {
