@@ -66,3 +66,5 @@ setDistro() {
 setPHPVersionVariables() {
 	PHP_MAJDOTMINDOTPAT_VERSION="$(php-config --version)"
 	PHP_MAJMIN_VERSION=$(printf '%s' "$PHP_MAJDOTMINDOTPAT_VERSION" | awk -F. '{print $1*100+$2}')
+	PHP_MAJDOTMIN_VERSION=$(printf '%s' "$PHP_MAJDOTMINDOTPAT_VERSION" | cut -d. -f1-2)
+	PHP_MAJMINPAT_VERSION=$(printf '%s' "$PHP_MAJDOTMINDOTPAT_VERSION" | awk -F. '{print $1*10000+$2*100+$3}')
