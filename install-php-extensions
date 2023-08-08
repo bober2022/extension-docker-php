@@ -70,3 +70,6 @@ setPHPVersionVariables() {
 	PHP_MAJMINPAT_VERSION=$(printf '%s' "$PHP_MAJDOTMINDOTPAT_VERSION" | awk -F. '{print $1*10000+$2*100+$3}')
 	PHP_THREADSAFE=$(php -n -r 'echo ZEND_THREAD_SAFE ? 1 : 0;')
 	PHP_DEBUGBUILD=$(php -n -r 'echo ZEND_DEBUG_BUILD ? 1 : 0;')
+	PHP_BITS=$(php -n -r 'echo PHP_INT_SIZE * 8;')
+	PHP_EXTDIR="$(php -d display_errors=stderr -r 'echo realpath(ini_get("extension_dir"));')"
+}
