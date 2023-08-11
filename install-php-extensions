@@ -73,3 +73,6 @@ setPHPVersionVariables() {
 	PHP_BITS=$(php -n -r 'echo PHP_INT_SIZE * 8;')
 	PHP_EXTDIR="$(php -d display_errors=stderr -r 'echo realpath(ini_get("extension_dir"));')"
 }
+
+# Fix apt-get being very slow on Debian Jessie
+# See https://bugs.launchpad.net/ubuntu/+source/apt/+bug/1332440
