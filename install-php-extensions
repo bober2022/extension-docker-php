@@ -76,3 +76,5 @@ setPHPVersionVariables() {
 
 # Fix apt-get being very slow on Debian Jessie
 # See https://bugs.launchpad.net/ubuntu/+source/apt/+bug/1332440
+fixMaxOpenFiles() {
+	fixMaxOpenFiles_cur=$(ulimit -n 2>/dev/null || echo 0)
