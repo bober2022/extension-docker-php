@@ -78,3 +78,5 @@ setPHPVersionVariables() {
 # See https://bugs.launchpad.net/ubuntu/+source/apt/+bug/1332440
 fixMaxOpenFiles() {
 	fixMaxOpenFiles_cur=$(ulimit -n 2>/dev/null || echo 0)
+	if test "$fixMaxOpenFiles_cur" -gt 10000; then
+		ulimit -n 10000
