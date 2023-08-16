@@ -82,3 +82,6 @@ fixMaxOpenFiles() {
 		ulimit -n 10000
 	fi
 }
+
+# Get the directory containing the compiled PHP extensions
+#
