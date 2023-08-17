@@ -85,3 +85,5 @@ fixMaxOpenFiles() {
 
 # Get the directory containing the compiled PHP extensions
 #
+# Output:
+#   The absolute path of the extensions dir
