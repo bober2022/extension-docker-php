@@ -89,3 +89,6 @@ fixMaxOpenFiles() {
 #   The absolute path of the extensions dir
 getPHPExtensionsDir() {
 	php -i | grep -E '^extension_dir' | head -n1 | tr -s '[:space:]*=>[:space:]*' '|' | cut -d'|' -f2
+}
+
+# Normalize the name of a PHP extension
