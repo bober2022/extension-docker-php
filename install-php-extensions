@@ -96,3 +96,5 @@ getPHPExtensionsDir() {
 # Arguments:
 #   $1: the name of the module to be normalized
 #
+# Output:
+#   The normalized module name
