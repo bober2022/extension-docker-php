@@ -98,3 +98,5 @@ getPHPExtensionsDir() {
 #
 # Output:
 #   The normalized module name
+normalizePHPModuleName() {
+	normalizePHPModuleName_name="$1"
