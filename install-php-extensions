@@ -104,3 +104,5 @@ normalizePHPModuleName() {
 		*A* | *B* | *C* | *D* | *E* | *F* | *G* | *H* | *I* | *J* | *K* | *L* | *M* | *N* | *O* | *P* | *Q* | *R* | *S* | *T* | *U* | *V* | *W* | *X* | *Y* | *Z*)
 			normalizePHPModuleName_name="$(LC_CTYPE=C printf '%s' "$normalizePHPModuleName_name" | tr '[:upper:]' '[:lower:]')"
 			;;
+	esac
+	case "$normalizePHPModuleName_name" in
