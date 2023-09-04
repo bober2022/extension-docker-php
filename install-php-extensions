@@ -111,3 +111,5 @@ normalizePHPModuleName() {
 			;;
 		ioncube | ioncube\ loader)
 			normalizePHPModuleName_name='ioncube_loader'
+			;;
+		pecl_http)
