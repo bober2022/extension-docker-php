@@ -113,3 +113,6 @@ normalizePHPModuleName() {
 			normalizePHPModuleName_name='ioncube_loader'
 			;;
 		pecl_http)
+			normalizePHPModuleName_name='http'
+			;;
+		zend\ opcache)
