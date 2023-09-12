@@ -122,3 +122,6 @@ normalizePHPModuleName() {
 			if test $PHP_MAJMIN_VERSION -ge 700; then
 				normalizePHPModuleName_name='sodium'
 			fi
+			;;
+		sodium)
+			if test $PHP_MAJMIN_VERSION -lt 700; then
