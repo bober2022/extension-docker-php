@@ -125,3 +125,5 @@ normalizePHPModuleName() {
 			;;
 		sodium)
 			if test $PHP_MAJMIN_VERSION -lt 700; then
+				normalizePHPModuleName_name='libsodium'
+			fi
