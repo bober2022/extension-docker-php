@@ -131,3 +131,6 @@ normalizePHPModuleName() {
 		*\ *)
 			printf '### WARNING Unrecognized module name: %s ###\n' "$1" >&2
 			;;
+	esac
+	printf '%s' "$normalizePHPModuleName_name"
+}
