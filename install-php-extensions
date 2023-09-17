@@ -134,3 +134,6 @@ normalizePHPModuleName() {
 	esac
 	printf '%s' "$normalizePHPModuleName_name"
 }
+
+# Parse a package.xml (or package2.xml) file and extract the module name and version
+#
