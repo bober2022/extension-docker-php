@@ -137,3 +137,5 @@ normalizePHPModuleName() {
 
 # Parse a package.xml (or package2.xml) file and extract the module name and version
 #
+# Arguments:
+#   $1: the patho to the XML file
