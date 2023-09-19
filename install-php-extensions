@@ -139,3 +139,7 @@ normalizePHPModuleName() {
 #
 # Arguments:
 #   $1: the patho to the XML file
+#
+# Set these variables:
+# - EXTRACTPACKAGEVERSIONFROMXML_NAME
+# - EXTRACTPACKAGEVERSIONFROMXML_VERSION
