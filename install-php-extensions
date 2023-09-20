@@ -143,3 +143,6 @@ normalizePHPModuleName() {
 # Set these variables:
 # - EXTRACTPACKAGEVERSIONFROMXML_NAME
 # - EXTRACTPACKAGEVERSIONFROMXML_VERSION
+#
+# Output:
+#   Nothing
