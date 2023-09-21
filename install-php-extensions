@@ -146,3 +146,6 @@ normalizePHPModuleName() {
 #
 # Output:
 #   Nothing
+#
+# Return:
+#   0 (true): if the string is in the list
