@@ -149,3 +149,5 @@ normalizePHPModuleName() {
 #
 # Return:
 #   0 (true): if the string is in the list
+#   1 (false): if the string is not in the list
+extractPackageVersionFromXML() {
