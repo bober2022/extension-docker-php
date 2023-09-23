@@ -151,3 +151,6 @@ normalizePHPModuleName() {
 #   0 (true): if the string is in the list
 #   1 (false): if the string is not in the list
 extractPackageVersionFromXML() {
+	if ! test -f "$1"; then
+		printf 'Unable to find the file\n%s\n' >&2
+		return 1
