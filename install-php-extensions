@@ -154,3 +154,6 @@ extractPackageVersionFromXML() {
 	if ! test -f "$1"; then
 		printf 'Unable to find the file\n%s\n' >&2
 		return 1
+	fi
+	extractPackageVersionFromXML_code="$(
+		cat <<'EOT'
