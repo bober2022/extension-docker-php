@@ -157,3 +157,5 @@ extractPackageVersionFromXML() {
 	fi
 	extractPackageVersionFromXML_code="$(
 		cat <<'EOT'
+$doc = new DOMDocument();
+if (!$doc->load($argv[1])) {
