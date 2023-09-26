@@ -159,3 +159,5 @@ extractPackageVersionFromXML() {
 		cat <<'EOT'
 $doc = new DOMDocument();
 if (!$doc->load($argv[1])) {
+	fwrite(STDERR, "Failed to load XML file\n");
+	exit(1);
