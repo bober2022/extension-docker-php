@@ -165,3 +165,6 @@ if (!$doc->load($argv[1])) {
 set_error_handler(
 	static function($errno, $errstr) {
 		fwrite(STDERR, trim((string) $errstr) . "\n");
+		exit(1);
+	},
+	-1
