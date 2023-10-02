@@ -171,3 +171,4 @@ set_error_handler(
 );
 $xpath = new DOMXpath($doc);
 $xpath->registerNamespace('v20', 'http://pear.php.net/dtd/package-2.0');
+$xpath->registerNamespace('v21', 'http://pear.php.net/dtd/package-2.1');
