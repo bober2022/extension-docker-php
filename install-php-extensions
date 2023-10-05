@@ -176,3 +176,5 @@ if ($xpath->query('/v20:package/v20:dependencies')->length === 1) {
 	$ns = 'v20:';
 } elseif ($xpath->query('/v21:package/v21:dependencies')->length === 1) {
 	$ns = 'v21:';
+} elseif ($xpath->query('/package')->length === 1) {
+	$ns = '';
