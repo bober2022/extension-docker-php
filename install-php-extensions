@@ -178,3 +178,5 @@ if ($xpath->query('/v20:package/v20:dependencies')->length === 1) {
 	$ns = 'v21:';
 } elseif ($xpath->query('/package')->length === 1) {
 	$ns = '';
+} else {
+	fwrite(STDERR, "Unsupported namespace of the XML of package version details\n");
