@@ -180,3 +180,5 @@ if ($xpath->query('/v20:package/v20:dependencies')->length === 1) {
 	$ns = '';
 } else {
 	fwrite(STDERR, "Unsupported namespace of the XML of package version details\n");
+}
+$nodes = $xpath->query("/{$ns}package/{$ns}name");
