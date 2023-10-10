@@ -185,3 +185,5 @@ $nodes = $xpath->query("/{$ns}package/{$ns}name");
 $name = trim((string) $nodes[0]->nodeValue);
 if ($ns === '') {
 	$nodes = $xpath->query("/{$ns}package/{$ns}version");
+} else {
+	$nodes = $xpath->query("/{$ns}package/{$ns}version/{$ns}release");
