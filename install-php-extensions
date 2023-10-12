@@ -189,3 +189,5 @@ if ($ns === '') {
 	$nodes = $xpath->query("/{$ns}package/{$ns}version/{$ns}release");
 }
 $version = trim((string) $nodes[0]->nodeValue);
+echo "EXTRACTPACKAGEVERSIONFROMXML_NAME='{$name}'\n";
+echo "EXTRACTPACKAGEVERSIONFROMXML_VERSION='{$version}'\n";
