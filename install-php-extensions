@@ -191,3 +191,7 @@ if ($ns === '') {
 $version = trim((string) $nodes[0]->nodeValue);
 echo "EXTRACTPACKAGEVERSIONFROMXML_NAME='{$name}'\n";
 echo "EXTRACTPACKAGEVERSIONFROMXML_VERSION='{$version}'\n";
+exit(0);
+EOT
+	)"
+	extractPackageVersionFromXML_vars="$(php -n -d display_errors=stderr -r "$extractPackageVersionFromXML_code" "$1")"
