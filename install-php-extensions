@@ -195,3 +195,5 @@ exit(0);
 EOT
 	)"
 	extractPackageVersionFromXML_vars="$(php -n -d display_errors=stderr -r "$extractPackageVersionFromXML_code" "$1")"
+	if test -z "$extractPackageVersionFromXML_vars"; then
+		return 1
