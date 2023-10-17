@@ -199,3 +199,5 @@ EOT
 		return 1
 	fi
 	eval "$extractPackageVersionFromXML_vars"
+	return 0
+}
