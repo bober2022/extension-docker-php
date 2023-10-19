@@ -204,3 +204,5 @@ EOT
 
 # Parse a module name (and optionally version) as received via command arguments, extracting the version and normalizing it
 # Examples:
+#   xdebug-2.9.8
+#   xdebug-^2
