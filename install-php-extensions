@@ -206,3 +206,6 @@ EOT
 # Examples:
 #   xdebug-2.9.8
 #   xdebug-^2
+#   xdebug-^2.9
+#
+# Arguments:
