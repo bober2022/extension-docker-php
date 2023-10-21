@@ -209,3 +209,6 @@ EOT
 #   xdebug-^2.9
 #
 # Arguments:
+#   $1: the name of the module to be normalized
+#
+# Set these variables:
