@@ -212,3 +212,5 @@ EOT
 #   $1: the name of the module to be normalized
 #
 # Set these variables:
+# - PROCESSED_PHP_MODULE_ARGUMENT
+#
