@@ -214,3 +214,5 @@ EOT
 # Set these variables:
 # - PROCESSED_PHP_MODULE_ARGUMENT
 #
+# Optionally set these variables:
+# - PHP_WANTEDMODULEVERSION_<...> (where <...> is the normalized module name)
