@@ -216,3 +216,5 @@ EOT
 #
 # Optionally set these variables:
 # - PHP_WANTEDMODULEVERSION_<...> (where <...> is the normalized module name)
+# - PHP_MODULESOURCECODEPATH_<...> (where <...> is the normalized module name)
+#
