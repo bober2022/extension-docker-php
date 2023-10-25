@@ -218,3 +218,5 @@ EOT
 # - PHP_WANTEDMODULEVERSION_<...> (where <...> is the normalized module name)
 # - PHP_MODULESOURCECODEPATH_<...> (where <...> is the normalized module name)
 #
+# Output:
+#   Nothing
