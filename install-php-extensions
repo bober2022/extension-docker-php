@@ -220,3 +220,5 @@ EOT
 #
 # Output:
 #   Nothing
+processPHPModuleArgument() {
+	processPHPModuleArgument_arg="$1"
