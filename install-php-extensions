@@ -223,3 +223,6 @@ EOT
 processPHPModuleArgument() {
 	processPHPModuleArgument_arg="$1"
 	# Convert GitHub short form to long url,
+	# for example: from
+	# php-memcached-dev/php-memcached@8f106564e6bb005ca6100b12ccc89000daafa9d8
+	# to
