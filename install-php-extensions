@@ -230,3 +230,6 @@ processPHPModuleArgument() {
 	processPHPModuleArgument_arg="$(printf '%s' "$processPHPModuleArgument_arg" | sed -E 's/^([a-zA-Z0-9_.\-]+\/[a-zA-Z0-9_.\-]+)@(.+$)/https:\/\/codeload.github.com\/\1\/tar.gz\/\2/')"
 	# Let's check if $processPHPModuleArgument_arg is an URL
 	if printf '%s' "$processPHPModuleArgument_arg" | grep -Eq '^https?://[^ ]+/[^ ]+$'; then
+		printf 'Downloading source from %s\n' "$processPHPModuleArgument_arg"
+		processPHPModuleArgument_arg="$(getPackageSource "$processPHPModuleArgument_arg")"
+	fi
