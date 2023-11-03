@@ -233,3 +233,6 @@ processPHPModuleArgument() {
 		printf 'Downloading source from %s\n' "$processPHPModuleArgument_arg"
 		processPHPModuleArgument_arg="$(getPackageSource "$processPHPModuleArgument_arg")"
 	fi
+	# Let's check if $processPHPModuleArgument_arg the absolute path of an existing directory
+	if test "$processPHPModuleArgument_arg" != "${processPHPModuleArgument_arg#/}" && test -d "$processPHPModuleArgument_arg"; then
+		if test -f "$processPHPModuleArgument_arg/package2.xml"; then
