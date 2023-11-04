@@ -236,3 +236,6 @@ processPHPModuleArgument() {
 	# Let's check if $processPHPModuleArgument_arg the absolute path of an existing directory
 	if test "$processPHPModuleArgument_arg" != "${processPHPModuleArgument_arg#/}" && test -d "$processPHPModuleArgument_arg"; then
 		if test -f "$processPHPModuleArgument_arg/package2.xml"; then
+			printf 'Checking package2.xml of directory %s... ' "$processPHPModuleArgument_arg"
+			if ! extractPackageVersionFromXML "$processPHPModuleArgument_arg/package2.xml"; then
+				return 1
