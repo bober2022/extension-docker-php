@@ -239,3 +239,5 @@ processPHPModuleArgument() {
 			printf 'Checking package2.xml of directory %s... ' "$processPHPModuleArgument_arg"
 			if ! extractPackageVersionFromXML "$processPHPModuleArgument_arg/package2.xml"; then
 				return 1
+			fi
+		elif test -f "$processPHPModuleArgument_arg/package.xml"; then
