@@ -246,3 +246,6 @@ processPHPModuleArgument() {
 				return 1
 			fi
 		else
+			printf 'Unable to find the package.xml file in the directory\n%s\n' "$processPHPModuleArgument_arg"
+			return 1
+		fi
