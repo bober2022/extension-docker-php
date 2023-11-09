@@ -249,3 +249,5 @@ processPHPModuleArgument() {
 			printf 'Unable to find the package.xml file in the directory\n%s\n' "$processPHPModuleArgument_arg"
 			return 1
 		fi
+		printf 'good (name: %s, version: %s)\n' "$EXTRACTPACKAGEVERSIONFROMXML_NAME" "$EXTRACTPACKAGEVERSIONFROMXML_VERSION"
+		PROCESSED_PHP_MODULE_ARGUMENT="$(normalizePHPModuleName "$EXTRACTPACKAGEVERSIONFROMXML_NAME")"
