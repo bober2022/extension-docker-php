@@ -251,3 +251,5 @@ processPHPModuleArgument() {
 		fi
 		printf 'good (name: %s, version: %s)\n' "$EXTRACTPACKAGEVERSIONFROMXML_NAME" "$EXTRACTPACKAGEVERSIONFROMXML_VERSION"
 		PROCESSED_PHP_MODULE_ARGUMENT="$(normalizePHPModuleName "$EXTRACTPACKAGEVERSIONFROMXML_NAME")"
+		processPHPModuleArgument_version="$EXTRACTPACKAGEVERSIONFROMXML_VERSION"
+		if printf '%s' "$PROCESSED_PHP_MODULE_ARGUMENT" | grep -Eq '^[a-zA-Z0-9_]+$'; then
