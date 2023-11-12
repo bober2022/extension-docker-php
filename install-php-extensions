@@ -255,3 +255,6 @@ processPHPModuleArgument() {
 		if printf '%s' "$PROCESSED_PHP_MODULE_ARGUMENT" | grep -Eq '^[a-zA-Z0-9_]+$'; then
 			eval PHP_MODULESOURCECODEPATH_$PROCESSED_PHP_MODULE_ARGUMENT="$processPHPModuleArgument_arg"
 		else
+			printf 'Unable to parse the following module name:\n%s\n' "$PROCESSED_PHP_MODULE_ARGUMENT" >&2
+			exit 1
+		fi
