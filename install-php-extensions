@@ -258,3 +258,5 @@ processPHPModuleArgument() {
 			printf 'Unable to parse the following module name:\n%s\n' "$PROCESSED_PHP_MODULE_ARGUMENT" >&2
 			exit 1
 		fi
+	else
+		PROCESSED_PHP_MODULE_ARGUMENT="${processPHPModuleArgument_arg%%-*}"
