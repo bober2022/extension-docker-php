@@ -262,3 +262,5 @@ processPHPModuleArgument() {
 		PROCESSED_PHP_MODULE_ARGUMENT="${processPHPModuleArgument_arg%%-*}"
 		if test -n "$PROCESSED_PHP_MODULE_ARGUMENT" && test "$PROCESSED_PHP_MODULE_ARGUMENT" != "$processPHPModuleArgument_arg"; then
 			processPHPModuleArgument_version="${processPHPModuleArgument_arg#*-}"
+		else
+			processPHPModuleArgument_version=''
