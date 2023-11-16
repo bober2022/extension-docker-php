@@ -264,3 +264,5 @@ processPHPModuleArgument() {
 			processPHPModuleArgument_version="${processPHPModuleArgument_arg#*-}"
 		else
 			processPHPModuleArgument_version=''
+		fi
+		PROCESSED_PHP_MODULE_ARGUMENT="$(normalizePHPModuleName "$PROCESSED_PHP_MODULE_ARGUMENT")"
