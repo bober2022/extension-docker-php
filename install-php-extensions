@@ -268,3 +268,4 @@ processPHPModuleArgument() {
 		PROCESSED_PHP_MODULE_ARGUMENT="$(normalizePHPModuleName "$PROCESSED_PHP_MODULE_ARGUMENT")"
 	fi
 	if test -n "$processPHPModuleArgument_version"; then
+		if printf '%s' "$PROCESSED_PHP_MODULE_ARGUMENT" | grep -Eq '^[a-zA-Z0-9_]+$'; then
