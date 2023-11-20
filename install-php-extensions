@@ -271,3 +271,5 @@ processPHPModuleArgument() {
 		if printf '%s' "$PROCESSED_PHP_MODULE_ARGUMENT" | grep -Eq '^[a-zA-Z0-9_]+$'; then
 			eval PHP_WANTEDMODULEVERSION_$PROCESSED_PHP_MODULE_ARGUMENT="$processPHPModuleArgument_version"
 		elif printf '%s' "$PROCESSED_PHP_MODULE_ARGUMENT" | grep -Eq '^@[a-zA-Z0-9_]+$'; then
+			eval PHP_WANTEDMODULEVERSION__${PROCESSED_PHP_MODULE_ARGUMENT#@}="$processPHPModuleArgument_version"
+		else
