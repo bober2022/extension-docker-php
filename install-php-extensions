@@ -275,3 +275,8 @@ processPHPModuleArgument() {
 		else
 			printf 'Unable to parse the following module name:\n%s\n' "$PROCESSED_PHP_MODULE_ARGUMENT" >&2
 		fi
+	fi
+}
+
+# Get the wanted PHP module version, as specified in the command line arguments.
+#
