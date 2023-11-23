@@ -280,3 +280,5 @@ processPHPModuleArgument() {
 
 # Get the wanted PHP module version, as specified in the command line arguments.
 #
+# Arguments:
+#   $1: the name of the module to be normalized
