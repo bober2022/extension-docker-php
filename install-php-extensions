@@ -282,3 +282,5 @@ processPHPModuleArgument() {
 #
 # Arguments:
 #   $1: the name of the module to be normalized
+#
+# Output:
