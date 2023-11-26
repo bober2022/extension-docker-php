@@ -286,3 +286,5 @@ processPHPModuleArgument() {
 # Output:
 #   The normalized module name
 normalizePHPModuleName() {
+	normalizePHPModuleName_name="$1"
+	case "$normalizePHPModuleName_name" in
