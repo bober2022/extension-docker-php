@@ -293,3 +293,5 @@ normalizePHPModuleName() {
 			;;
 	esac
 	case "$normalizePHPModuleName_name" in
+		datadog_trace)
+			normalizePHPModuleName_name=ddtrace
