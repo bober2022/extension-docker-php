@@ -295,3 +295,5 @@ normalizePHPModuleName() {
 	case "$normalizePHPModuleName_name" in
 		datadog_trace)
 			normalizePHPModuleName_name=ddtrace
+			;;
+		ioncube | ioncube\ loader)
