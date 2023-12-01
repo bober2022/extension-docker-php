@@ -297,3 +297,5 @@ normalizePHPModuleName() {
 			normalizePHPModuleName_name=ddtrace
 			;;
 		ioncube | ioncube\ loader)
+			normalizePHPModuleName_name='ioncube_loader'
+			;;
