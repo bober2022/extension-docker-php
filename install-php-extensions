@@ -301,3 +301,5 @@ normalizePHPModuleName() {
 			;;
 		pecl_http)
 			normalizePHPModuleName_name='http'
+			;;
+		zend\ opcache)
