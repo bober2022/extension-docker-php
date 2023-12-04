@@ -303,3 +303,5 @@ normalizePHPModuleName() {
 			normalizePHPModuleName_name='http'
 			;;
 		zend\ opcache)
+			normalizePHPModuleName_name='opcache'
+			;;
