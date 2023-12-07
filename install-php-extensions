@@ -305,3 +305,5 @@ normalizePHPModuleName() {
 		zend\ opcache)
 			normalizePHPModuleName_name='opcache'
 			;;
+		libsodium)
+			if test $PHP_MAJMIN_VERSION -ge 700; then
